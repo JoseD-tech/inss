@@ -1,13 +1,24 @@
-# You can override the included template(s) by including variable overrides
-# SAST customization: https://docs.gitlab.com/ee/user/application_security/sast/#customizing-the-sast-settings
-# Secret Detection customization: https://docs.gitlab.com/ee/user/application_security/secret_detection/#customizing-settings
-# Dependency Scanning customization: https://docs.gitlab.com/ee/user/application_security/dependency_scanning/#customizing-the-dependency-scanning-settings
-# Container Scanning customization: https://docs.gitlab.com/ee/user/application_security/container_scanning/#customizing-the-container-scanning-settings
-# Note that environment variables can be set in several places
-# See https://docs.gitlab.com/ee/ci/variables/#cicd-variable-precedence
+image: node:latest
+
 stages:
-- test
-sast:
-  stage: test
-include:
-- template: Security/SAST.gitlab-ci.yml
+    - production
+
+production:
+    type: deploy
+    stage: production
+    script:
+        - npm install -g heroku &>/dev/null
+        - echo "machine api.heroku.com" > ~/.netrc
+        - echo "  login arnaldoeperezb@gmail.com" >> ~/.netrc
+        - echo "  password fbb64da8-fb9e-4e6a-96ed-06d963b7b483" >> ~/.netrc
+        - echo "machine git.heroku.com" >> ~/.netrc
+        - echo "  login arnaldoeperezb@gmail.com" >> ~/.netrc
+        - echo "  password fbb64da8-fb9e-4e6a-96ed-06d963b7b483" >> ~/.netrc        
+        - git config --global user.email "arnaldoeperezb@gmail.com"
+        - git config --global user.name "Arnaldo Perez"
+        - git switch master
+        - git status
+        - heroku git:remote -a sinapsys-portal
+        - git push -f heroku master 
+    only:
+        - master
