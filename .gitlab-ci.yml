@@ -1,0 +1,24 @@
+image: node:latest
+
+stages:
+    - production
+
+production:
+    type: deploy
+    stage: production
+    script:
+        - npm install -g heroku &>/dev/null
+        - echo "machine api.heroku.com" > ~/.netrc
+        - echo "  login arnaldoeperezb@gmail.com" >> ~/.netrc
+        - echo "  password fbb64da8-fb9e-4e6a-96ed-06d963b7b483" >> ~/.netrc
+        - echo "machine git.heroku.com" >> ~/.netrc
+        - echo "  login arnaldoeperezb@gmail.com" >> ~/.netrc
+        - echo "  password fbb64da8-fb9e-4e6a-96ed-06d963b7b483" >> ~/.netrc        
+        - git config --global user.email "arnaldoeperezb@gmail.com"
+        - git config --global user.name "Arnaldo Perez"
+        - git switch master
+        - git status
+        - heroku git:remote -a sinapsys-portal
+        - git push -f heroku master 
+    only:
+        - master
