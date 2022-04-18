@@ -9,12 +9,12 @@ production:
     script:
         - npm install -g heroku &>/dev/null
         - echo "machine api.heroku.com" > ~/.netrc
-        - echo "  login arnaldoeperezb@gmail.com" >> ~/.netrc
-        - echo "  password fbb64da8-fb9e-4e6a-96ed-06d963b7b483" >> ~/.netrc
+        - echo "  login $HEROKU_EMAIL" >> ~/.netrc
+        - echo "  password $HEROKU_PASSWORD" >> ~/.netrc
         - echo "machine git.heroku.com" >> ~/.netrc
-        - echo "  login arnaldoeperezb@gmail.com" >> ~/.netrc
-        - echo "  password fbb64da8-fb9e-4e6a-96ed-06d963b7b483" >> ~/.netrc        
-        - git config --global user.email "arnaldoeperezb@gmail.com"
+        - echo "  login $HEROKU_EMAIL" >> ~/.netrc
+        - echo "  password $HEROKU_PASSWORD" >> ~/.netrc        
+        - git config --global user.email "$HEROKU_EMAIL"
         - git config --global user.name "Arnaldo Perez"
         - git switch master
         - git status
