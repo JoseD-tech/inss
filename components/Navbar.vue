@@ -68,6 +68,14 @@ ul {
 
 a {
   text-decoration: none;
+  padding: .5rem 1rem;
   color: white !important;
+  border-bottom: solid 2px transparent;
+  transition: border-bottom .3s ease-in-out;
 }
+
+a:hover {
+  border-bottom: solid 2px white;
+}
+
 </style>
