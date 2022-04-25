@@ -1,7 +1,7 @@
 <template>
-  <v-row class="my-4" align="center" justify="center">
+  <v-row class="my-4 col-9 mx-auto" align="center" justify="center">
     <v-col xs="12" md="6">
-      <h3 class="text-h4 text-uppercase font-weight-light">
+      <h3 class="text-h5 text-uppercase font-weight-light">
         servicios de infraestructura tecnologica
       </h3>
     </v-col>
