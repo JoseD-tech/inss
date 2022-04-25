@@ -18,7 +18,7 @@
           </h4>
           <p class="font-weight-light">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Exercitationem, quo in. Non dignissimos ipsam nam!
+            Exercitationem, quo ian. Non dignissimos ipsam nam!
           </p>
         </div>
       </v-flex>
