@@ -5,8 +5,8 @@
         Articulos de Interes
       </h3>
     </v-col>
-    <v-col cols="12" class="d-flex aling-center">
-      <v-flex xs12 md4 class="my-10 d-flex align-center pa-4" height="150px">
+    <v-col cols="12" class="d-flex aling-center flex-wrap">
+      <v-col cols="12" md="4" class="my-md-10 d-flex align-center pa-4" height="150px">
         <v-avatar size="100px" class="rounded-lg">
           <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="alt">
         </v-avatar>
@@ -18,8 +18,8 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </v-card-text>
         </div>
-      </v-flex>
-      <v-flex xs12 md4 class="my-10 d-flex align-center pa-4" height="150px">
+      </v-col>
+      <v-col cols="12" md="4" class="my-md-10 d-flex align-center pa-4" height="150px">
         <v-avatar size="100px" class="rounded-lg">
           <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="alt">
         </v-avatar>
@@ -31,8 +31,8 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </v-card-text>
         </div>
-      </v-flex>
-      <v-flex xs12 md4 class="my-10 d-flex align-center pa-4" height="150px">
+      </v-col>
+      <v-col cols="12" md="4" class="my-md-10 d-flex align-center pa-4" height="150px">
         <v-avatar size="100px" class="rounded-lg">
           <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="alt">
         </v-avatar>
@@ -44,7 +44,7 @@
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
           </v-card-text>
         </div>
-      </v-flex>
+      </v-col>
     </v-col>
   </v-row>
 </template>

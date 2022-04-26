@@ -5,8 +5,8 @@
         Ellos confian en nosotros
       </h3>
     </v-col>
-    <v-col cols="9" class="d-flex">
-      <v-col cols="12" md="4">
+    <v-col cols="12" md="9" class="d-flex flex-wrap">
+      <v-col cols="10" md="4" class="mx-auto">
         <v-card
           class="mx-auto rounded-lg color-gradiante"
           height="16"
@@ -32,7 +32,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" md="4">
+      <v-col cols="10" md="4" class="mx-auto">
         <v-card
           class="mx-auto rounded-lg color-gradiante"
           height="16"
@@ -58,7 +58,7 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" md="4">
+      <v-col cols="10" md="4" class="mx-auto">
         <v-card
           class="mx-auto rounded-lg color-gradiante"
           height="16"

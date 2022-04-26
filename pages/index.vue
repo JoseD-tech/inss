@@ -5,6 +5,8 @@
     <SeccionDesarrollo />
     <SeccionServicios />
     <SeccionConfian />
+    <SeccionMapa/>
+    <SeccionContacto/>
   </v-row>
 </template>
 
@@ -14,6 +16,8 @@ import SeccionTecnologia from '../components/Tecnologia.vue'
 import SeccionDesarrollo from '../components/Desarrollo.vue'
 import SeccionServicios from '../components/Servicios.vue'
 import SeccionConfian from '../components/Confian.vue'
+import SeccionMapa from "../components/Mapa.vue";
+import SeccionContacto from "../components/Contacto.vue";
 import landingStore from '@/store/landing'
 
 export default {
@@ -23,7 +27,9 @@ export default {
     SeccionTecnologia,
     SeccionDesarrollo,
     SeccionServicios,
-    SeccionConfian
+    SeccionConfian,
+    SeccionMapa,
+    SeccionContacto
   },
   setup () {
     const landing = landingStore()
