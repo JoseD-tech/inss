@@ -33,7 +33,7 @@ const bannerStore = defineStore('banner', {
             { size: sizes.md, url: '~/assets/banner/laptop-md.jpg' },
             { size: sizes.lg, url: '~/assets/banner/laptop-lg.jpg' }
           ]
-        },
+        }
       ]
     }
   },
@@ -48,7 +48,6 @@ const bannerStore = defineStore('banner', {
             return img.size === sizeIndex + 1
           })?.url
         })
-        console.log({ result })
         return result
       })
     }
