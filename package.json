@@ -2,7 +2,7 @@
   "name": "sinapsys-front",
   "version": "1.0.0",
   "private": true,
-  "engines": {"node": "14.17.6"},
+  "engines": {"node": "16.14.2"},
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
