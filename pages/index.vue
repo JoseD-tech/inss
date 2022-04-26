@@ -5,8 +5,8 @@
     <SeccionDesarrollo />
     <SeccionServicios />
     <SeccionConfian />
-    <SeccionMapa/>
-    <SeccionContacto/>
+    <SeccionMapa />
+    <SeccionContacto />
   </v-row>
 </template>
 
@@ -16,8 +16,8 @@ import SeccionTecnologia from '../components/Tecnologia.vue'
 import SeccionDesarrollo from '../components/Desarrollo.vue'
 import SeccionServicios from '../components/Servicios.vue'
 import SeccionConfian from '../components/Confian.vue'
-import SeccionMapa from "../components/Mapa.vue";
-import SeccionContacto from "../components/Contacto.vue";
+import SeccionMapa from '../components/Mapa.vue'
+import SeccionContacto from '../components/Contacto.vue'
 import landingStore from '@/store/landing'
 
 export default {

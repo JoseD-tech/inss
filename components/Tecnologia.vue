@@ -35,7 +35,9 @@
         </v-col>
         <v-col cols="12" md="4" class="text-center px-2 mx-1">
           <v-avatar size="60px" color="orange lighten-5">
-            <v-icon color="orange darken-1" size="40px"> mdi-finance </v-icon>
+            <v-icon color="orange darken-1" size="40px">
+              mdi-finance
+            </v-icon>
           </v-avatar>
           <div class="mt-4">
             <h4 class="text-h5 text-capitalize font-weight-regular my-2">
@@ -73,8 +75,8 @@
 
 <script>
 export default {
-  name: "SeccionTecnologia",
-};
+  name: 'SeccionTecnologia'
+}
 </script>
 
 <style>

@@ -8,14 +8,14 @@
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    />
   </v-col>
 </template>
 
 <script>
 export default {
-  name: "SeccionMapa",
-};
+  name: 'SeccionMapa'
+}
 </script>
 
 <style>

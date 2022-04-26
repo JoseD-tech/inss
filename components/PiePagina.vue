@@ -3,17 +3,25 @@
     <v-row class="col-12 col-md-9 mx-auto">
       <v-row>
         <v-col cols="6" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">Mapsite</h4>
+          <h4 class="text-h4 text-capitalize white--text mb-5">
+            Mapsite
+          </h4>
 
           <ul class="d-flex flex-column a font-weight-light">
             <li>
-              <nuxt-link to="/"> Inicio </nuxt-link>
+              <nuxt-link to="/">
+                Inicio
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/empresa"> Empresa </nuxt-link>
+              <nuxt-link to="/empresa">
+                Empresa
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/Fintech"> Fintech </nuxt-link>
+              <nuxt-link to="/Fintech">
+                Fintech
+              </nuxt-link>
             </li>
             <li>
               <nuxt-link to="/Tecnologias">
@@ -21,76 +29,98 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/Servicios"> Servicios Tecnologicos </nuxt-link>
+              <nuxt-link to="/Servicios">
+                Servicios Tecnologicos
+              </nuxt-link>
             </li>
           </ul>
         </v-col>
         <v-col cols="6" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">Acera de</h4>
+          <h4 class="text-h4 text-capitalize white--text mb-5">
+            Acera de
+          </h4>
           <ul class="d-flex flex-column font-weight-light">
             <li>
-              <nuxt-link to="/nosotros"> Nosotros </nuxt-link>
+              <nuxt-link to="/nosotros">
+                Nosotros
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/legal"> Marco legal </nuxt-link>
+              <nuxt-link to="/legal">
+                Marco legal
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/Our"> Our services </nuxt-link>
+              <nuxt-link to="/Our">
+                Our services
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/stories"> Stories </nuxt-link>
+              <nuxt-link to="/stories">
+                Stories
+              </nuxt-link>
             </li>
           </ul>
         </v-col>
         <v-col cols="6" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">Contact</h4>
+          <h4 class="text-h4 text-capitalize white--text mb-5">
+            Contact
+          </h4>
           <ul class="d-flex flex-column font-weight-light white--text">
             <li class="d-flex align-center">
-              <v-icon color="white">mdi-phone</v-icon>
+              <v-icon color="white">
+                mdi-phone
+              </v-icon>
               <p>+58 414 1234567</p>
             </li>
             <li class="d-flex align-center">
-              <v-icon color="white">mdi-email</v-icon>
+              <v-icon color="white">
+                mdi-email
+              </v-icon>
               <p>info@codigo.com</p>
             </li>
             <li class="d-flex align-center">
-              <v-icon color="white">mdi-map</v-icon>
+              <v-icon color="white">
+                mdi-map
+              </v-icon>
               <p>Barinas</p>
             </li>
           </ul>
         </v-col>
         <v-col cols="6" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">Siguenos</h4>
+          <h4 class="text-h4 text-capitalize white--text mb-5">
+            Siguenos
+          </h4>
           <v-col cols="12" class="d-flex align-center justify-center flex-wrap pa-0">
             <v-col cols="6" md="4" class="pa-0 mb-5 text-center">
-                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                    <v-icon color="white" size="40px">mdi-twitter</v-icon>
-                </a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                <v-icon color="white" size="40px">mdi-twitter</v-icon>
+              </a>
             </v-col>
             <v-col cols="6" md="4" class="pa-0 mb-5 text-center">
-                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                    <v-icon color="white" size="40px">mdi-google</v-icon>
-                </a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                <v-icon color="white" size="40px">mdi-google</v-icon>
+              </a>
             </v-col>
             <v-col cols="6" md="4" class="pa-0 mb-5 text-center">
-                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                    <v-icon color="white" size="40px">mdi-instagram</v-icon>
-                </a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                <v-icon color="white" size="40px">mdi-instagram</v-icon>
+              </a>
             </v-col>
             <v-col cols="6" md="4" class="pa-0 mb-5 text-center">
-                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                    <v-icon color="white" size="40px">mdi-pinterest</v-icon>
-                </a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                <v-icon color="white" size="40px">mdi-pinterest</v-icon>
+              </a>
             </v-col>
             <v-col cols="6" md="4" class="pa-0 mb-5 text-center">
-                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                    <v-icon color="white" size="40px">mdi-reddit</v-icon>
-                </a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                <v-icon color="white" size="40px">mdi-reddit</v-icon>
+              </a>
             </v-col>
             <v-col cols="6" md="4" class="pa-0 mb-5 text-center">
-                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
-                    <v-icon color="white" size="40px">mdi-facebook</v-icon>
-                </a>
+              <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                <v-icon color="white" size="40px">mdi-facebook</v-icon>
+              </a>
             </v-col>
           </v-col>
         </v-col>
@@ -107,7 +137,7 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style scoped>
