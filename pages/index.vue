@@ -19,7 +19,6 @@ import SeccionConfian from '../components/Confian.vue'
 import SeccionMapa from '../components/Mapa.vue'
 import SeccionContacto from '../components/Contacto.vue'
 import landingStore from '@/store/landing'
-
 export default {
   name: 'IndexPage',
   components: {

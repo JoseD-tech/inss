@@ -15,10 +15,10 @@ production:
         - echo "  login $HEROKU_EMAIL" >> ~/.netrc
         - echo "  password $HEROKU_PASSWORD" >> ~/.netrc        
         - git config --global user.email "$HEROKU_EMAIL"
-        - git config --global user.name "Arnaldo Perez"
+        - git config --global user.name "Sinapsys"
         - git switch master
         - git status
-        - heroku git:remote -a sinapsys-portal
+        - heroku git:remote -a $HEROKU_APP
         - git push -f heroku master 
     only:
         - master
