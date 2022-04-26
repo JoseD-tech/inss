@@ -13,7 +13,8 @@ production:
         - echo "  password $HEROKU_PASSWORD" >> ~/.netrc
         - echo "machine git.heroku.com" >> ~/.netrc
         - echo "  login $HEROKU_EMAIL" >> ~/.netrc
-        - echo "  password $HEROKU_PASSWORD" >> ~/.netrc        
+        - echo "  password $HEROKU_PASSWORD" >> ~/.netrc   
+        - heroku apps     
         - git config --global user.email "$HEROKU_EMAIL"
         - git config --global user.name "Sinapsys"
         - git switch master
