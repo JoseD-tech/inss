@@ -48,7 +48,6 @@ const bannerStore = defineStore('banner', {
             return img.size === sizeIndex + 1
           })?.url
         })
-        console.log({ result })
         return result
       })
     }
