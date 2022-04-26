@@ -6,42 +6,23 @@
       </h3>
     </v-col>
     <v-col cols="12" class="d-flex aling-center flex-wrap">
-      <v-col cols="12" md="4" class="my-md-10 d-flex align-center pa-4" height="150px">
+      <v-col
+        v-for="(articulo, id) in articulos"
+        :key="id"
+        cols="12"
+        md="4"
+        class="my-md-10 d-flex align-center pa-4"
+        height="150px"
+      >
         <v-avatar size="100px" class="rounded-lg">
-          <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="alt">
+          <img :src="articulo.urlImg" alt="alt">
         </v-avatar>
         <div>
           <v-card-title primary-title>
-            Articulo #1
+            {{ articulo.titleArticulo }}
           </v-card-title>
           <v-card-text class="text-justify">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </v-card-text>
-        </div>
-      </v-col>
-      <v-col cols="12" md="4" class="my-md-10 d-flex align-center pa-4" height="150px">
-        <v-avatar size="100px" class="rounded-lg">
-          <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="alt">
-        </v-avatar>
-        <div>
-          <v-card-title primary-title>
-            Articulo #1
-          </v-card-title>
-          <v-card-text class="text-justify">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </v-card-text>
-        </div>
-      </v-col>
-      <v-col cols="12" md="4" class="my-md-10 d-flex align-center pa-4" height="150px">
-        <v-avatar size="100px" class="rounded-lg">
-          <img src="https://cdn.vuetifyjs.com/images/john.jpg" alt="alt">
-        </v-avatar>
-        <div>
-          <v-card-title primary-title>
-            Articulo #1
-          </v-card-title>
-          <v-card-text class="text-justify">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            {{ articulo.texto }}
           </v-card-text>
         </div>
       </v-col>
@@ -51,6 +32,27 @@
 
 <script>
 export default {
+  data () {
+    return {
+      articulos: [
+        {
+          urlImg: 'https://cdn.vuetifyjs.com/images/john.jpg',
+          titleArticulo: 'Articulo #1',
+          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+        },
+        {
+          urlImg: 'https://cdn.vuetifyjs.com/images/john.jpg',
+          titleArticulo: 'Articulo #1',
+          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+        },
+        {
+          urlImg: 'https://cdn.vuetifyjs.com/images/john.jpg',
+          titleArticulo: 'Articulo #1',
+          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
+        }
+      ]
+    }
+  }
 }
 </script>
 
