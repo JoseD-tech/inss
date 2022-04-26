@@ -1,23 +1,39 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-      <v-card class="logo py-4 d-flex justify-center" />
-    </v-col>
+  <v-row>
+    <ArticulosInteres />
+    <SeccionTecnologia />
+    <SeccionDesarrollo />
+    <SeccionServicios />
+    <SeccionConfian />
+    <SeccionMapa />
+    <SeccionContacto />
   </v-row>
 </template>
 
 <script>
+import ArticulosInteres from '../components/ArticulosInteres.vue'
+import SeccionTecnologia from '../components/Tecnologia.vue'
+import SeccionDesarrollo from '../components/Desarrollo.vue'
+import SeccionServicios from '../components/Servicios.vue'
+import SeccionConfian from '../components/Confian.vue'
+import SeccionMapa from '../components/Mapa.vue'
+import SeccionContacto from '../components/Contacto.vue'
 import landingStore from '@/store/landing'
-
 export default {
   name: 'IndexPage',
+  components: {
+    ArticulosInteres,
+    SeccionTecnologia,
+    SeccionDesarrollo,
+    SeccionServicios,
+    SeccionConfian,
+    SeccionMapa,
+    SeccionContacto
+  },
   setup () {
     const landing = landingStore()
     landing.inicializar()
     return { landing }
-  },
-  mounted () {
-
   }
 }
 </script>
