@@ -25,7 +25,7 @@
         </v-row>
       </v-toolbar>
     </v-card>
-    <v-navigation-drawer v-model="drawer" absolute style="top: 548px;">
+    <v-navigation-drawer v-model="drawer" absolute style="height: 100vh; top: 548px;">
       <v-list nav dense>
         <v-list-item
           v-for="(enlace, id) in nav"
