@@ -12,16 +12,6 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-export default {
-  name: 'DefaultLayout',
-  data () {
-    return {
-    }
-  }
-}
-</script>
-=======
 import BarraNavegacion from '../components/Navbar.vue'
 import BannerCabecera from '../components/Banner.vue'
 import PiePagina from '../components/PiePagina.vue'
@@ -40,4 +30,3 @@ export default {
 
 <style>
 </style>
->>>>>>> f6ddbaa3638586ad9dd52d4cfdc04b2b6e6fa752

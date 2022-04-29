@@ -13,58 +13,29 @@
         />
 
         <v-row class="d-none d-md-flex">
-          <ul class="d-flex justify-space-around align-center font-weight-light">
-            <li>
-              <nuxt-link to="/">
-                Inicio
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/empresa">
-                Empresa
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/Fintech">
-                Fintech
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/Tecnologias">
-                Tecnologias de la informacion
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/Servicios">
-                Servicios Tecnologicos
+          <ul
+            class="d-flex justify-space-around align-center font-weight-light"
+          >
+            <li v-for="(enlace, id) in nav" :key="id">
+              <nuxt-link class="white--text" :to="enlace.to">
+                {{ enlace.title }}
               </nuxt-link>
             </li>
           </ul>
         </v-row>
       </v-toolbar>
     </v-card>
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" absolute style="top: 548px;">
       <v-list nav dense>
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
+        <v-list-item
+          v-for="(enlace, id) in nav"
+          :key="id"
+          link
+          :to="enlace.to"
+          active-class="orange darken-4 white--text"
         >
-          <v-list-item>
-            <v-list-item-title>Foo</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Bar</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Fizz</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-title>Buzz</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
+          <v-list-item-title>{{ enlace.title }}</v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
   </div>
@@ -75,14 +46,14 @@ export default {
   name: 'BarraNavegacion',
   data () {
     return {
-      selectedItem: 1,
       drawer: false,
-      group: null
-    }
-  },
-  watch: {
-    group () {
-      this.drawer = false
+      nav: [
+        { title: 'Inicio', to: '/' },
+        { title: 'Empresa', to: '/empresa' },
+        { title: 'Fintech', to: '/fintech' },
+        { title: 'Tecnologias de la informacion', to: '/tecnologia' },
+        { title: 'Servicios Tecnologicos', to: '/servicios' }
+      ]
     }
   }
 }
@@ -99,7 +70,6 @@ ul {
 a {
   text-decoration: none;
   padding: 0.5rem 1rem;
-  color: white !important;
   border-bottom: solid 2px transparent;
   transition: border-bottom 0.3s ease-in-out;
 }

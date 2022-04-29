@@ -3,7 +3,7 @@
     dark
     src="https://res.cloudinary.com/de6ewkpxa/image/upload/v1650769662/banner1_nveqpw.jpg"
   >
-    <v-container align="center" justify="center" class="px-10">
+    <v-container align="center" justify="center" class="px-md-10">
       <v-col cols="12" class="text-center text-md-left">
         <v-col cols="12" md="4" class="d-md-flex justify-center align-center mb-4">
           <v-img

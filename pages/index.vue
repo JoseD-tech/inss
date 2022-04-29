@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row class="col-12 mx-auto">
     <ArticulosInteres />
     <SeccionTecnologia />
     <SeccionDesarrollo />
