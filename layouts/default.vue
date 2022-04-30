@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <BannerCabecera />
     <BarraNavegacion />
+    <BannerCabecera />
     <v-main>
       <v-container class="mt-10">
         <Nuxt />

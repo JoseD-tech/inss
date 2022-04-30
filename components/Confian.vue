@@ -6,7 +6,7 @@
       </h3>
     </v-col>
     <v-col cols="12" md="9" class="d-flex flex-wrap">
-      <v-col v-for="(confia, id) in confian" :key="id" cols="10" md="4" class="mx-auto">
+      <v-col v-for="(confia, id) in landing.testimonios" :key="id" cols="10" md="4" class="mx-auto">
         <v-card
           class="mx-auto rounded-lg color-gradiante"
           height="16"
@@ -16,16 +16,16 @@
           <v-img
             height="80px"
             width="80px"
-            :src="confia.avatarImg"
+            :src="confia.imagen"
             class="rounded-circle mx-auto"
           />
           <v-card-text class="font-weight-light text-center">
             <p class="font-weight-regular my-3">
-              {{ confia.texto }}
+              {{ confia.texto}}
             </p>
-            <span class="font-weight-medium text-uppercase">{{ confia.nombre }}</span>
+            <span class="font-weight-medium text-uppercase">{{ confia.firmante }}</span>
             <br>
-            <span class="font-weight-Light">{{ confia.ocupacion }}</span>
+            <span class="font-weight-Light">{{ confia.cargo }}</span>
           </v-card-text>
         </v-card>
       </v-col>
@@ -34,32 +34,14 @@
 </template>
 
 <script>
+import landingStore from '~/store/landing'
 export default {
   name: 'SeccionConfian',
-  data () {
-    return {
-      confian: [
-        {
-          avatarImg: 'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg',
-          texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores adipisci excepturi necessitatibus eligendi alias odio, dolorem maxime reprehenderit nam cumque eveniet mollitia fuga. Dicta necessitatibus ea facere repellat saepe.',
-          nombre: 'M.O Jose',
-          ocupacion: 'Desarrollador'
-        },
-        {
-          avatarImg: 'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg',
-          texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores adipisci excepturi necessitatibus eligendi alias odio, dolorem maxime reprehenderit nam cumque eveniet mollitia fuga. Dicta necessitatibus ea facere repellat saepe.',
-          nombre: 'M.O Jose',
-          ocupacion: 'Desarrollador'
-        },
-        {
-          avatarImg: 'https://cdn.pixabay.com/photo/2016/11/21/12/42/beard-1845166_960_720.jpg',
-          texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error maiores adipisci excepturi necessitatibus eligendi alias odio, dolorem maxime reprehenderit nam cumque eveniet mollitia fuga. Dicta necessitatibus ea facere repellat saepe.',
-          nombre: 'M.O Jose',
-          ocupacion: 'Desarrollador'
-        }
-      ]
-    }
-  }
+  setup () {
+    const landing = landingStore()
+    landing.inicializar()
+    return { landing }
+  },
 }
 </script>
 

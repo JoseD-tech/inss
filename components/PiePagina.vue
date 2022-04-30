@@ -6,31 +6,10 @@
           <h4 class="text-h4 text-capitalize white--text mb-5">
             Mapsite
           </h4>
-
           <ul class="d-flex flex-column a font-weight-light">
-            <li>
-              <nuxt-link to="/">
-                Inicio
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/empresa">
-                Empresa
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/Fintech">
-                Fintech
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/Tecnologias">
-                Tecnologias de la informacion
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/Servicios">
-                Servicios Tecnologicos
+            <li v-for="(enlaceMapsite, id) in landing.mapsite" :key="id">
+              <nuxt-link :to="enlaceMapsite.url">
+                {{enlaceMapsite.texto}}
               </nuxt-link>
             </li>
           </ul>
@@ -40,24 +19,9 @@
             Acera de
           </h4>
           <ul class="d-flex flex-column font-weight-light">
-            <li>
-              <nuxt-link to="/nosotros">
-                Nosotros
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/legal">
-                Marco legal
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/Our">
-                Our services
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/stories">
-                Stories
+            <li v-for="(enlaceAcercaDe, id) in landing.acercaDe" :key="id">
+              <nuxt-link :to="enlaceAcercaDe.url">
+                {{enlaceAcercaDe.texto}}
               </nuxt-link>
             </li>
           </ul>
@@ -67,23 +31,13 @@
             Contact
           </h4>
           <ul class="d-flex flex-column font-weight-light white--text">
-            <li class="d-flex align-center">
-              <v-icon color="white">
-                mdi-phone
-              </v-icon>
-              <p>+58 414 1234567</p>
-            </li>
-            <li class="d-flex align-center">
-              <v-icon color="white">
-                mdi-email
-              </v-icon>
-              <p>info@codigo.com</p>
-            </li>
-            <li class="d-flex align-center">
-              <v-icon color="white">
-                mdi-map
-              </v-icon>
-              <p>Barinas</p>
+            <li v-for="(enlaceContacto, id) in landing.contacto" :key="id">
+              <nuxt-link to="#" class="d-flex align-center">
+                <v-icon color="white" class="mr-1">
+                  {{enlaceContacto.icono}}
+                </v-icon>
+                {{enlaceContacto.texto}}
+              </nuxt-link>
             </li>
           </ul>
         </v-col>
@@ -137,7 +91,14 @@
 </template>
 
 <script>
-export default {}
+import landingStore from '~/store/landing'
+export default {
+  setup () {
+    const landing = landingStore()
+    landing.inicializar()
+    return { landing }
+  },
+}
 </script>
 
 <style scoped>

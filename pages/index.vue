@@ -1,6 +1,6 @@
 <template>
   <v-row class="col-12 mx-auto">
-    <ArticulosInteres />
+    <!--<ArticulosInteres /> -->
     <SeccionTecnologia />
     <SeccionDesarrollo />
     <SeccionServicios />

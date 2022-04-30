@@ -6,29 +6,23 @@
       </h3>
     </v-col>
     <v-row class="col-12 col-md-6 text-center">
-      <v-col v-for="(servicio, id) in servicios" :key="id" cols="6" md="4">
-        <v-img class="my-7 mx-auto" width="100px" :src="servicio.urlImg" />
-        <span class="text-capitalize font-weight-light text-h6">{{ servicio.nombre }}</span>
+      <v-col v-for="(servicio, id) in landing.infraestructura" :key="id" cols="6" md="4">
+        <v-img class="my-7 mx-auto" width="100px" :src="servicio.imagen" />
+        <span class="text-capitalize font-weight-light text-h6">{{ servicio.titulo }}</span>
       </v-col>
     </v-row>
   </v-row>
 </template>
 
 <script>
+import landingStore from '~/store/landing'
 export default {
   name: 'SeccionServicios',
-  data () {
-    return {
-      servicios: [
-        { nombre: 'redes', urlImg: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png' },
-        { nombre: 'redes', urlImg: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png' },
-        { nombre: 'redes', urlImg: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png' },
-        { nombre: 'redes', urlImg: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png' },
-        { nombre: 'redes', urlImg: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png' },
-        { nombre: 'redes', urlImg: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png' }
-      ]
-    }
-  }
+  setup () {
+    const landing = landingStore()
+    landing.inicializar()
+    return { landing }
+  },
 }
 </script>
 

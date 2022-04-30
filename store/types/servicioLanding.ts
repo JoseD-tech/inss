@@ -18,9 +18,18 @@ interface testimonio{
     cargo:string
 }
 
+interface fintech {
+    titulo:string,
+    texto:string,
+    imagen?:string,
+    colorFondo: string,
+    colorIcon: string
+}
+
+
 export default interface servicioLanding{
-    software:Array<servicio>
-    fintech:Array<servicio>
+    software:Array<fintech>
+    fintech:Array<fintech>
     infraestructura:Array<servicio>
     acercaDe:Array<meta>
     mapsite:Array<meta>

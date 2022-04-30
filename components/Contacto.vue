@@ -15,7 +15,7 @@
         neque esse dolore placeat nobis id unde illum vel. Quae?
       </p>
       <p class="orange--text text-h6">
-        correo@correo.com
+        {{this.landing.contacto[1].texto}}
       </p>
     </v-col>
     <v-col cols="12" md="6">
@@ -57,8 +57,14 @@
 </template>
 
 <script>
+import landingStore from '~/store/landing'
 export default {
-  name: 'SeccionContacto'
+  name: 'SeccionContacto',
+  setup () {
+    const landing = landingStore()
+    landing.inicializar()
+    return { landing }
+  },
 }
 </script>
 

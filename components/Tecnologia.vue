@@ -17,15 +17,15 @@
           mx-auto
         "
       >
-        <v-col v-for="(item, id) in tegnologia" :key="id" cols="12" md="4" class="text-center px-2 mx-1">
+        <v-col v-for="(item, id) in landing.fintech" :key="id" cols="12" md="4" class="text-center px-2 mx-1">
           <v-avatar size="60px" :color="item.colorFondo">
             <v-icon :color="item.colorIcon" size="40px">
-              {{ item.icon }}
+              {{ item.imagen }}
             </v-icon>
           </v-avatar>
           <div class="mt-4">
             <h4 class="text-h5 text-capitalize font-weight-regular my-2">
-              {{ item.title }}
+              {{ item.titulo }}
             </h4>
             <p class="font-weight-light">
               {{ item.texto }}
@@ -45,35 +45,15 @@
 </template>
 
 <script>
+import landingStore from '~/store/landing'
 export default {
+
   name: 'SeccionTecnologia',
-  data () {
-    return {
-      tegnologia: [
-        {
-          icon: 'mdi-credit-card',
-          title: 'pasarelas de pago',
-          texto: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quo ian. Non dignissimos ipsam nam!',
-          colorFondo: 'purple lighten-5',
-          colorIcon: 'purple lighten-1'
-        },
-        {
-          icon: 'mdi-finance',
-          title: 'inversiones',
-          texto: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quo ian. Non dignissimos ipsam nam!',
-          colorFondo: 'orange lighten-5',
-          colorIcon: 'orange darken-1'
-        },
-        {
-          icon: 'mdi-account-group',
-          title: 'Asesorias',
-          texto: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quo ian. Non dignissimos ipsam nam!',
-          colorFondo: 'green lighten-5',
-          colorIcon: 'green darken-1'
-        }
-      ]
-    }
-  }
+  setup () {
+    const landing = landingStore()
+    landing.inicializar()
+    return { landing }
+  },
 }
 </script>
 

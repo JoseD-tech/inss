@@ -9,15 +9,15 @@
           Desarrollo de Software
         </h3>
         <v-row class="py-4">
-          <v-col v-for="(item, id) in itemSoftware" :key="id" cols="12" md="6">
+          <v-col v-for="(item, id) in landing.software" :key="id" cols="12" md="6">
             <div class="d-flex align-center">
-              <v-avatar size="35px" :color="item.fondoIcon" class="rounded-circle">
+              <v-avatar size="35px" :color="item.colorFondo" class="rounded-circle">
                 <v-icon size="20px" :color="item.colorIcon">
-                  {{ item.icon }}
+                  {{ item.imagen }}
                 </v-icon>
               </v-avatar>
               <h4 class="text-capitalize ml-2">
-                {{ item.title }}
+                {{ item.titulo }}
               </h4>
             </div>
             <div class="font-weight-light text-justify">
@@ -33,42 +33,14 @@
 </template>
 
 <script>
+import landingStore from '~/store/landing'
 export default {
   name: 'SeccionDesarrollo',
-  data () {
-    return {
-      itemSoftware: [
-        {
-          icon: 'mdi-desktop-mac',
-          colorIcon: 'orange darken-3',
-          fondoIcon: 'orange lighten-4',
-          title: 'Sistema de informacion',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?'
-        },
-        {
-          icon: 'mdi-cellphone',
-          colorIcon: 'orange darken-3',
-          fondoIcon: 'orange lighten-4',
-          title: 'App para moviles',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?'
-        },
-        {
-          icon: 'mdi-eye',
-          colorIcon: 'orange darken-3',
-          fondoIcon: 'orange lighten-4',
-          title: 'Presencia en la web',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?'
-        },
-        {
-          icon: 'mdi-hand-coin',
-          colorIcon: 'orange darken-3',
-          fondoIcon: 'orange lighten-4',
-          title: 'Comercio electronico',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?'
-        }
-      ]
-    }
-  }
+  setup () {
+    const landing = landingStore()
+    landing.inicializar()
+    return { landing }
+  },
 }
 </script>
 
