@@ -47,8 +47,8 @@
             rows="3"
             row-height="30"
           />
-          <v-btn depressed color="amber darken-4" class="white--text">
-            Normal
+          <v-btn depressed color="amber darken-4" class="white--text col-12">
+            Enviar
           </v-btn>
         </v-col>
       </v-form>
