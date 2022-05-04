@@ -21,7 +21,7 @@
           />
           <v-card-text class="font-weight-light text-center">
             <p class="font-weight-regular my-3">
-              {{ confia.texto}}
+              {{ confia.texto }}
             </p>
             <span class="font-weight-medium text-uppercase">{{ confia.firmante }}</span>
             <br>
@@ -41,7 +41,7 @@ export default {
     const landing = landingStore()
     landing.inicializar()
     return { landing }
-  },
+  }
 }
 </script>
 

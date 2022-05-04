@@ -9,7 +9,7 @@
           <ul class="d-flex flex-column a font-weight-light">
             <li v-for="(enlaceMapsite, id) in landing.mapsite" :key="id">
               <nuxt-link :to="enlaceMapsite.url">
-                {{enlaceMapsite.texto}}
+                {{ enlaceMapsite.texto }}
               </nuxt-link>
             </li>
           </ul>
@@ -21,7 +21,7 @@
           <ul class="d-flex flex-column font-weight-light">
             <li v-for="(enlaceAcercaDe, id) in landing.acercaDe" :key="id">
               <nuxt-link :to="enlaceAcercaDe.url">
-                {{enlaceAcercaDe.texto}}
+                {{ enlaceAcercaDe.texto }}
               </nuxt-link>
             </li>
           </ul>
@@ -34,9 +34,9 @@
             <li v-for="(enlaceContacto, id) in landing.contacto" :key="id">
               <nuxt-link to="#" class="d-flex align-center">
                 <v-icon color="white" class="mr-1">
-                  {{enlaceContacto.icono}}
+                  {{ enlaceContacto.icono }}
                 </v-icon>
-                {{enlaceContacto.texto}}
+                {{ enlaceContacto.texto }}
               </nuxt-link>
             </li>
           </ul>
@@ -97,7 +97,7 @@ export default {
     const landing = landingStore()
     landing.inicializar()
     return { landing }
-  },
+  }
 }
 </script>
 

@@ -26,7 +26,6 @@ interface fintech {
     colorIcon: string
 }
 
-
 export default interface servicioLanding{
     software:Array<fintech>
     fintech:Array<fintech>

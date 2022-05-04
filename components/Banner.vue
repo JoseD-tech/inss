@@ -18,18 +18,20 @@
         md="4"
         class="d-flex flex-column justify-center align-center vh mb-md-4"
       >
-      <div class="d-flex flex-column flex-md-row justify-center align-center">
-        <img
-          src="../static/logo.png"
-          alt="Logo SINAPSYS"
-          style="height: 100px"
-          class="mr-md-2"
-        />
-        <h1 class="text-h2 font-weight-black my-0 px-0">SINAPSYS</h1>
-      </div>
-        
+        <div class="d-flex flex-column flex-md-row justify-center align-center">
+          <img
+            src="../static/logo.png"
+            alt="Logo SINAPSYS"
+            style="height: 100px"
+            class="mr-md-2"
+          >
+          <h1 class="text-h2 font-weight-black my-0 px-0">
+            SINAPSYS
+          </h1>
+        </div>
+
         <p class="text-h5 font-weight-regular">
-          Fundacion lorem Ipsum <br />
+          Fundacion lorem Ipsum <br>
           de desarrollo <span class="font-weight-bold">tegnologico</span>
         </p>
       </v-col>
@@ -64,8 +66,8 @@
 
 <script>
 export default {
-  name: "BannerCabecera",
-};
+  name: 'BannerCabecera'
+}
 </script>
 
 <style scoped>

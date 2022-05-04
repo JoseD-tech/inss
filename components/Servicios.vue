@@ -22,7 +22,7 @@ export default {
     const landing = landingStore()
     landing.inicializar()
     return { landing }
-  },
+  }
 }
 </script>
 

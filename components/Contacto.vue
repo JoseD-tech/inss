@@ -15,7 +15,7 @@
         neque esse dolore placeat nobis id unde illum vel. Quae?
       </p>
       <p class="orange--text text-h6">
-        {{ this.landing.contacto[1].texto }}
+        {{ landing.contacto[1].texto }}
       </p>
     </v-col>
     <v-col cols="12" md="6">
@@ -49,15 +49,15 @@
 </template>
 
 <script>
-import landingStore from "~/store/landing";
+import landingStore from '~/store/landing'
 export default {
-  name: "SeccionContacto",
-  setup() {
-    const landing = landingStore();
-    landing.inicializar();
-    return { landing };
-  },
-};
+  name: 'SeccionContacto',
+  setup () {
+    const landing = landingStore()
+    landing.inicializar()
+    return { landing }
+  }
+}
 </script>
 
 <style>
