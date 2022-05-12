@@ -3,10 +3,10 @@
     <v-row class="col-12 col-md-9 mx-auto">
       <v-row>
         <v-col cols="12" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">
+          <h4 class="text-h4 text-center text-md-left text-capitalize white--text mb-5">
             Mapsite
           </h4>
-          <ul class="d-flex flex-column a font-weight-light">
+          <ul class="d-flex flex-column font-weight-light">
             <li v-for="(enlaceMapsite, id) in landing.mapsite" :key="id">
               <nuxt-link :to="enlaceMapsite.url">
                 {{ enlaceMapsite.texto }}
@@ -15,7 +15,7 @@
           </ul>
         </v-col>
         <v-col cols="12" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">
+          <h4 class="text-h4 text-center text-md-left text-capitalize white--text mb-5">
             Acera de
           </h4>
           <ul class="d-flex flex-column font-weight-light">
@@ -27,7 +27,7 @@
           </ul>
         </v-col>
         <v-col cols="12" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">
+          <h4 class="text-h4 text-center text-md-left text-capitalize white--text mb-5">
             Contacto
           </h4>
           <ul class="d-flex flex-column font-weight-light white--text">
@@ -42,7 +42,7 @@
           </ul>
         </v-col>
         <v-col cols="12" md="3">
-          <h4 class="text-h4 text-capitalize white--text mb-5">
+          <h4 class="text-h4 text-center text-md-left text-capitalize white--text mb-5">
             Siguenos
           </h4>
           <v-col cols="12" class="d-flex align-center justify-center flex-wrap pa-0">
