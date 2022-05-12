@@ -1,0 +1,25 @@
+image: node:latest
+
+stages:
+    - production
+
+production:
+    type: deploy
+    stage: production
+    script:
+        - npm install -g heroku &>/dev/null
+        - echo "machine api.heroku.com" > ~/.netrc
+        - echo "  login $HEROKU_EMAIL" >> ~/.netrc
+        - echo "  password $HEROKU_PASSWORD" >> ~/.netrc
+        - echo "machine git.heroku.com" >> ~/.netrc
+        - echo "  login $HEROKU_EMAIL" >> ~/.netrc
+        - echo "  password $HEROKU_PASSWORD" >> ~/.netrc   
+        - cat ~/.netrc
+        - git config --global user.email "$HEROKU_EMAIL"
+        - git config --global user.name "Sinapsys"
+        - git switch master
+        - git status
+        - heroku git:remote -a $HEROKU_APP
+        - git push -f heroku master 
+    only:
+        - master
