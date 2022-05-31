@@ -98,21 +98,21 @@ const landingStore = defineStore('landing', {
         {
           imagen: 'mdi-credit-card',
           titulo: 'Desarrollo se servicios y productos',
-          texto: 'Desarrollo de servicios y productos digitales a comercio, entretenimiento, educación...',
+          texto: 'En  SINAPSYS desarrollamos tus ideas. La vida digital con oportunidades en un mercado exponencial.',
           colorFondo: 'purple lighten-5',
           colorIcon: 'purple lighten-1'
         },
         {
           imagen: 'mdi-finance', 
           titulo: 'planes de inversión',
-          texto: 'En SINAPSYS tenemos diseñados los planes de inversión adaptados a las posibilidades del trabajador, el emprendedor y las empresas. Las finanzas tecnológicas, la criptomonedas, las inversiones, la finanzas descentralizadas, los activos digitales son algunos de los ámbitos de inversión que están presentes en la vida digital de todos los seres humanos. Las inversiones en finanzas tecnológicas con altos niveles de confianza y seguridad es la oferta que presentamos.',
+          texto: 'En SINAPSYS hemos diseñado planes de inversión para el trabajador, el emprendedor y las empresas.',
           colorFondo: 'orange lighten-5',
           colorIcon: 'orange darken-1'
         },
         {
           imagen: 'mdi-account-group',
           titulo: 'consultorías técnicas y financieras',
-          texto: 'En SINAPSYS sabemos que sus ideas para emprendimientos digitales requieren de un acompañamiento serio y de alta calidad profesional. Nuestro equipo de especialistas está preparado para atender sus solicitudes de asesorías en los distintos ámbitos  de la economía digital. Exploramos junto a usted las oportunidades para su emprendimiento digital, para su conversión o para la construcción de infraestructura digital que le permita desarrollar la productividad de su idea o su empresa.',
+          texto: 'Les orientamos a la rentabilidad y a las oportunidades para un productivo emprendimiento digital.',
           colorFondo: 'green lighten-5',
           colorIcon: 'green darken-1'
         }

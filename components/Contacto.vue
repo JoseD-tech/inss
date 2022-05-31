@@ -4,15 +4,11 @@
       <h3 class="text-h5 text-uppercase font-weight-light mb-10">
         Estamos para servirte
       </h3>
-      <p class="font-weight-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
-        aliquam architecto? Architecto magni nobis delectus. Ea atque eius
-        voluptas adipisci voluptatum, architecto minima nostrum blanditiis
-        ratione ex cum dolore placeat.
+      <p class="font-weight-light text-justify">
+        SINAPSYS, está íntimamente relacionada  con sistemas de producción, administrando recursos tecnológicos orientados a desarrollar la competitividad de SINAPSYS como Empresa Rental Digital.
       </p>
-      <p class="mt-10 font-weight-light">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta delectus
-        neque esse dolore placeat nobis id unde illum vel. Quae?
+      <p class="font-weight-light text-justify"> 
+        Es la encargada de tomar la tecnología como elemento corporativo principal para lograr beneficios sostenibles, priorizando la actualización constante de su capacidad tecnológica; aplicando sistemas de producción y llevándolos a cabo en distintas áreas, adaptándolas a las nuevas tecnologías. 
       </p>
       <p class="orange--text text-h6">
         {{ landing.contacto[1].texto }}
