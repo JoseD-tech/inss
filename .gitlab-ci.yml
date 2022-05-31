@@ -4,7 +4,6 @@ stages:
     - production
 
 production:
-    type: deploy
     stage: production
     script:
         - npm install -g heroku &>/dev/null
