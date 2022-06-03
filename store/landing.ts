@@ -99,22 +99,22 @@ const landingStore = defineStore('landing', {
           imagen: 'mdi-credit-card',
           titulo: 'Desarrollo se servicios y productos',
           texto: 'En  SINAPSYS desarrollamos tus ideas. La vida digital con oportunidades en un mercado exponencial.',
-          colorFondo: 'purple lighten-5',
-          colorIcon: 'purple lighten-1'
+          colorFondo: '#edebfe',
+          colorIcon: '#806fea'
         },
         {
           imagen: 'mdi-finance', 
           titulo: 'planes de inversión',
           texto: 'En SINAPSYS hemos diseñado planes de inversión para el trabajador, el emprendedor y las empresas.',
-          colorFondo: 'orange lighten-5',
-          colorIcon: 'orange darken-1'
+          colorFondo: '#feeed0',
+          colorIcon: '#fcac12'
         },
         {
           imagen: 'mdi-account-group',
           titulo: 'consultorías técnicas y financieras',
           texto: 'Les orientamos a la rentabilidad y a las oportunidades para un productivo emprendimiento digital.',
-          colorFondo: 'green lighten-5',
-          colorIcon: 'green darken-1'
+          colorFondo: '#16c562',
+          colorIcon: '#d9f7e7'
         }
       ]
       /** estado global de la seccion de ELLOS CONFIAN EN NOSOTROS */

@@ -36,7 +36,7 @@
       </v-col>
       <v-col cols="12" md="9" class="mx-auto">
         <img
-          src="https://img.freepik.com/free-vector/email-sent-new-message-notification-internet-promotion-mobile-phone-with-envelope_39422-756.jpg?t=st=1650772714~exp=1650773314~hmac=9c6c664eb22c8d81f70e60d2810b9223b89528639b89db29a332a83bd89071eb&w=996"
+          src="@/assets/banner/Computadoras.png"
           alt=""
           class="img-clase"
         >
@@ -60,7 +60,16 @@ export default {
 
 <style>
 .img-clase {
-  height: 500px;
+  height: 300px;
   width: 100%;
 }
+
+@media (min-width: 600px) {
+  .img-clase {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
 </style>

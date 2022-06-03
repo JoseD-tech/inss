@@ -1,6 +1,6 @@
 <template>
   <v-card flat tile class="overflow-hidden">
-    <v-app-bar app flat class="amber darken-4" fixed>
+    <v-app-bar app flat color="#ff6600" fixed>
       <v-toolbar-title class="d-md-none white--text font-weight-black">
         SINAPSYS
       </v-toolbar-title>
