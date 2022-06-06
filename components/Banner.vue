@@ -49,20 +49,16 @@ export default {
 .img-fondo-vh {
   height: 100vh;
   max-width: 100%;
-  background-image: url("../assets/banner/datacenter-sm.jpg");
-  background-position: center center;
+  background-image: url("../assets/banner/banner-md.jpg");
+  background-position: center right 85%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media (min-width: 600px) {
-  .img-fondo-vh {
-    background-image: url("../assets/banner/datacenter-md.jpg");
-  }
-}
 @media (min-width: 960px) {
   .img-fondo-vh {
-    background-image: url("../assets/banner/datacenter-lg.jpg");
+    background-image: url("../assets/banner/banner-lg.jpg");
+      background-position: center center;
   }
 }
 
