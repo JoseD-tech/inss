@@ -17,6 +17,7 @@
         cols="12"
         md="4"
         class="d-flex flex-column justify-center justify-md-strat  vh mb-md-4"
+        data-aos="fade-right" data-aos-duration="800"
       >
         <div class="d-flex flex-column flex-md-row align-center mb-5">
           <img

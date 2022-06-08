@@ -18,7 +18,7 @@
           mx-auto
         "
       >
-        <v-col v-for="(item, id) in landing.fintech" :key="id" cols="12" md="4" class="text-center px-2 mx-1">
+        <v-col data-aos="fade-up" data-aos-duration="800" v-for="(item, id) in landing.fintech" :key="id" cols="12" md="4" class="text-center px-2 mx-1">
           <v-avatar size="60px" :color="item.colorFondo">
             <v-icon :color="item.colorIcon" size="40px">
               {{ item.imagen }}
@@ -39,6 +39,8 @@
           src="@/assets/banner/Computadoras.png"
           alt=""
           class="img-clase"
+          data-aos="fade-up" 
+          data-aos-duration="800"
         >
       </v-col>
     </v-col>

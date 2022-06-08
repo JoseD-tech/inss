@@ -6,7 +6,7 @@
       </h3>
     </v-col>
     <v-col cols="12" md="9" class="d-flex flex-wrap">
-      <v-col v-for="(confia, id) in landing.testimonios" :key="id" cols="10" md="4" class="mx-auto">
+      <v-col data-aos="flip-left" data-aos-duration="1000" data-aos-easing="ease-out-cubic" v-for="(confia, id) in landing.testimonios" :key="id" cols="10" md="4" class="mx-auto">
         <v-card
           class="mx-auto rounded-lg color-gradiante"
           height="16"

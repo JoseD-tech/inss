@@ -1,6 +1,6 @@
 <template>
-  <v-row class="col-12 col-md-9 mx-auto">
-    <v-col cols="12" md="6">
+  <v-row class="col-12 col-md-9 mx-auto" data-aos="fade-up" data-aos-duration="800">
+    <v-col cols="12" md="6" >
       <h3 class="text-h5 text-uppercase font-weight-light mb-10">
         Estamos para servirte
       </h3>
