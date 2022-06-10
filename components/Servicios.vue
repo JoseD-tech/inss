@@ -7,7 +7,7 @@
     </v-col>
     <v-row class="col-12 col-md-6 text-center">
       <v-col data-aos="fade-up" data-aos-duration="800" v-for="(servicio, id) in landing.infraestructura" :key="id" cols="6" md="4">
-        <v-img class="my-7 mx-auto" width="100px" :src="servicio.imagen" />
+        <img :src="require('@/static/img-globales/' + servicio.imagen + '.svg')" class="my-7 mx-auto" width="100px" />
         <span class="text-capitalize font-weight-light">{{ servicio.titulo }}</span>
       </v-col>
     </v-row>

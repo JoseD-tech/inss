@@ -28,7 +28,7 @@ const landingStore = defineStore('landing', {
   },
   actions: {
     inicializar () {
-      // const randomPic = 'https://picsum.photos/seed/picsum/200/200'
+      //const randomPic = '@/assets/banner/Redes.svg'
       /** estado global de la seccion de Desarrollo de software */
       this.software = [
         {
@@ -63,32 +63,32 @@ const landingStore = defineStore('landing', {
       /** estado global de la seccion de SERVICIOS DE INFRAESTRUCTURA TECNOLOGICA */
       this.infraestructura = [
         {
-          imagen: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png',
+          imagen: 'Redes',
           titulo: 'Redes',
           texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula sagittis purus'
         },
         {
-          imagen: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png',
+          imagen: 'Telefonia',
           titulo: 'Telefonía',
           texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula sagittis purus'
         },
         {
-          imagen: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png',
+          imagen: 'Mantenimiento',
           titulo: 'Mantenimiento',
           texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula sagittis purus'
         },
         {
-          imagen: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png',
+          imagen: 'Capacitacion',
           titulo: 'Capacitación',
           texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula sagittis purus'
         },
         {
-          imagen: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png',
+          imagen: 'Servidores',
           titulo: 'Servidores',
           texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula sagittis purus'
         },
         {
-          imagen: 'https://cdn-icons-png.flaticon.com/512/4707/4707024.png',
+          imagen: 'Ventasv1',
           titulo: 'Venta de equipos',
           texto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula sagittis purus'
         }
