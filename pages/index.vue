@@ -1,6 +1,6 @@
 <template>
-  <v-row>
-    <ArticulosInteres />
+  <v-row class="col-12 mx-auto">
+    <!--<ArticulosInteres /> -->
     <SeccionTecnologia />
     <SeccionDesarrollo />
     <SeccionServicios />
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ArticulosInteres from '../components/ArticulosInteres.vue'
+// import ArticulosInteres from '../components/ArticulosInteres.vue'
 import SeccionTecnologia from '../components/Tecnologia.vue'
 import SeccionDesarrollo from '../components/Desarrollo.vue'
 import SeccionServicios from '../components/Servicios.vue'
@@ -22,7 +22,7 @@ import landingStore from '@/store/landing'
 export default {
   name: 'IndexPage',
   components: {
-    ArticulosInteres,
+    // ArticulosInteres,
     SeccionTecnologia,
     SeccionDesarrollo,
     SeccionServicios,

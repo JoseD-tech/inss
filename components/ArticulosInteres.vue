@@ -31,28 +31,9 @@
 </template>
 
 <script>
+
 export default {
-  data () {
-    return {
-      articulos: [
-        {
-          urlImg: 'https://cdn.vuetifyjs.com/images/john.jpg',
-          titleArticulo: 'Articulo #1',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
-        },
-        {
-          urlImg: 'https://cdn.vuetifyjs.com/images/john.jpg',
-          titleArticulo: 'Articulo #1',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
-        },
-        {
-          urlImg: 'https://cdn.vuetifyjs.com/images/john.jpg',
-          titleArticulo: 'Articulo #1',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'
-        }
-      ]
-    }
-  }
+
 }
 </script>
 

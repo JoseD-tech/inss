@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <BannerCabecera />
     <BarraNavegacion />
+    <BannerCabecera />
     <v-main>
       <v-container class="mt-10">
         <Nuxt />
@@ -29,4 +29,15 @@ export default {
 </script>
 
 <style>
+
+html::-webkit-scrollbar {
+  width: 8px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #ff6600;
+  border-radius: 10px;
+}
+
+
 </style>
