@@ -30,12 +30,17 @@ export default {
 
 <style>
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 html::-webkit-scrollbar {
   width: 8px;
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #ff6600;
+  background-color: #c41520;
   border-radius: 10px;
 }
 

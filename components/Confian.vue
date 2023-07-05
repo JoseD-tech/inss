@@ -2,7 +2,7 @@
   <v-row class="mt-10" align="center" justify="center">
     <v-col cols="12">
       <h3 class="text-h4 text-uppercase text-center font-weight-light">
-        Ellos confian en nosotros
+        Testimonios
       </h3>
     </v-col>
     <v-col cols="12" md="9" class="d-flex flex-wrap">
@@ -47,11 +47,7 @@ export default {
 
 <style>
 .color-gradiante {
-  background: rgb(254, 118, 25) !important;
-  background: linear-gradient(
-    90deg,
-    rgba(254, 118, 25, 1) 0%,
-    rgba(245, 176, 6, 1) 100%
-  ) !important;
+  background: #c41520 !important;
+
 }
 </style>

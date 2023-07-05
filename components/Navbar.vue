@@ -1,8 +1,8 @@
 <template>
   <v-card flat tile class="overflow-hidden">
-    <v-app-bar app flat color="#ff6600" fixed>
+    <v-app-bar app flat color="#c41520" fixed>
       <v-toolbar-title class="d-md-none white--text font-weight-black">
-        SINAPSYS
+        INASS
       </v-toolbar-title>
       <v-spacer class="d-md-none" />
       <v-app-bar-nav-icon
@@ -30,7 +30,7 @@
           :key="id"
           link
           :to="enlace.to"
-          active-class="orange darken-4 white--text"
+          active-class="red darken-4 white--text"
         >
           <v-list-item-title>{{ enlace.title }}</v-list-item-title>
         </v-list-item>
@@ -47,10 +47,10 @@ export default {
       drawer: false,
       nav: [
         { title: 'Inicio', to: '/' },
-        { title: 'Empresa', to: '/empresa' },
-        { title: 'Fintech', to: '/fintech' },
-        { title: 'Tecnologias de la informacion', to: '/tecnologia' },
-        { title: 'Servicios Tecnologicos', to: '/servicios' }
+        { title: 'Objetivos', to: '#objetivo' },
+        { title: 'Servicios', to: '#servicios' },
+        { title: 'Testimonios', to: '#testimonio' },
+        { title: 'Contacto', to: '#contacto' }
       ]
     }
   }

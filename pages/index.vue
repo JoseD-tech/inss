@@ -1,12 +1,11 @@
 <template>
   <v-row class="col-12 mx-auto">
     <!--<ArticulosInteres /> -->
-    <SeccionTecnologia />
-    <SeccionDesarrollo />
-    <SeccionServicios />
-    <SeccionConfian />
+    <SeccionTecnologia id="objetivo" class="mt-10" />
+    <SeccionDesarrollo id="servicios" class="mt-10"/>
+    <SeccionConfian id="testimonio" class="mt-10"/>
     <SeccionMapa />
-    <SeccionContacto />
+    <SeccionContacto id="contacto" class="mt-10"/>
   </v-row>
 </template>
 

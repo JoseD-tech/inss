@@ -5,15 +5,15 @@
         Estamos para servirte
       </h3>
       <p class="font-weight-light text-justify">
-        SINAPSYS, está íntimamente relacionada  con sistemas de producción, administrando recursos tecnológicos orientados a desarrollar la competitividad de SINAPSYS como Empresa Rental Digital.
+        Garantizar la atención integral de los Adultos, Adultas Mayores y Otras Categorías de Personas menores de 60 años no amparados por otras leyes o programas mediante la prestación de un servicio social a nivel nacional, con la participación e integración ciudadana a fin de mejorar su calidad de vida.
       </p>
-      <p class="font-weight-light text-justify"> 
-        Es la encargada de tomar la tecnología como elemento corporativo principal para lograr beneficios sostenibles, priorizando la actualización constante de su capacidad tecnológica; aplicando sistemas de producción y llevándolos a cabo en distintas áreas, adaptándolas a las nuevas tecnologías. 
+      <p class="font-weight-light text-justify">
+        Ser el organismo rector en la prestación de servicios sociales los Adultos, Adultas Mayores y Otras Categorías de Personas de una manera confiable, eficiente y eficaz, basado en los principios constitucionales de justicia social, autonomía y participación.
       </p>
-      <p class="orange--text text-h6">
+      <p class="red--text text-h6">
         {{ landing.contacto[1].texto }}
       </p>
-      <p class="orange--text text-h6">
+      <p class="red--text text-h6">
         {{ landing.contacto[2].texto }}
       </p>
     </v-col>
@@ -38,7 +38,7 @@
           />
         </v-col>
         <v-col cols="12" class="py-0">
-          <v-btn depressed color="amber darken-4" class="white--text" style="width: 100%;">
+          <v-btn depressed color="#c41520" class="white--text" style="width: 100%;">
             Enviar
           </v-btn>
         </v-col>

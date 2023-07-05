@@ -32,32 +32,32 @@ const landingStore = defineStore('landing', {
       /** estado global de la seccion de Desarrollo de software */
       this.software = [
         {
-          titulo: 'Sistema de informacion',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?',
-          imagen: 'mdi-desktop-mac',
-          colorFondo: 'orange lighten-4',
-          colorIcon: 'orange darken-3'
+          titulo: 'ATENCIÓN INTEGRAL',
+          texto: 'Compromiso de mejorar la calidad de vida de los adultos y adultas mayores.',
+          imagen: 'mdi-account-child',
+          colorFondo: '#c41520',
+          colorIcon: '#fff'
         },
         {
-          titulo: 'App para moviles',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?',
-          imagen: 'mdi-cellphone',
-          colorFondo: 'orange lighten-4',
-          colorIcon: 'orange darken-3'
+          titulo: 'CENTROS DE SERVICIOS SOCIALES',
+          texto: 'Espacios de atención donde los adultos mayores tienen a disposición servicios médicos.',
+          imagen: 'mdi-nature-people',
+          colorFondo: '#c41520',
+          colorIcon: '#fff'
         },
         {
-          titulo: 'Presencia en la web',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?',
-          imagen: 'mdi-eye',
-          colorFondo: 'orange lighten-4',
-          colorIcon: 'orange darken-3'
+          titulo: 'ALDEAS DE ENCUENTRO INTEGRALES',
+          texto: 'Espacios constituidos por y para adultos mayores.',
+          imagen: 'mdi-barn',
+          colorFondo: '#c41520',
+          colorIcon: '#fff'
         },
         {
-          titulo: 'Comercio electronico',
-          texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, facilis?',
-          imagen: 'mdi-hand-coin',
-          colorFondo: 'orange lighten-4',
-          colorIcon: 'orange darken-3'
+          titulo: 'GEROGRANJAS',
+          texto: 'Espacios donde se cultiva y la cosecha de rubros agrícolas, pecuarios, artesanales y culturales.',
+          imagen: 'mdi-corn',
+          colorFondo: '#c41520',
+          colorIcon: '#fff'
         }
       ]
       /** estado global de la seccion de SERVICIOS DE INFRAESTRUCTURA TECNOLOGICA */
@@ -96,25 +96,25 @@ const landingStore = defineStore('landing', {
       /** estado global de la seccion de tecnologia financiera */
       this.fintech = [
         {
-          imagen: 'mdi-credit-card',
-          titulo: 'Desarrollo se servicios y productos',
-          texto: 'En  SINAPSYS desarrollamos tus ideas. La vida digital con oportunidades en un mercado exponencial.',
-          colorFondo: '#edebfe',
-          colorIcon: '#806fea'
-        },
-        {
-          imagen: 'mdi-finance', 
-          titulo: 'planes de inversión',
-          texto: 'En SINAPSYS hemos diseñado planes de inversión para el trabajador, el emprendedor y las empresas.',
-          colorFondo: '#feeed0',
-          colorIcon: '#fcac12'
-        },
-        {
           imagen: 'mdi-account-group',
-          titulo: 'consultorías técnicas y financieras',
-          texto: 'Les orientamos a la rentabilidad y a las oportunidades para un productivo emprendimiento digital.',
-          colorFondo: '#16c562',
-          colorIcon: '#d9f7e7'
+          titulo: 'Atender',
+          texto: 'Brindar proteccion y seguridad social brindando atencion integral con criterio de justicia social.',
+          colorFondo: '#c41520',
+          colorIcon: '#fff'
+        },
+        {
+          imagen: 'mdi-heart',
+          titulo: 'Cuidar',
+          texto: 'Satisfacer requerimientos en la demanda de productos y servicios en la atención integral al adulto y adulta mayor y otras categorías de personas en el área social.',
+          colorFondo: '#c41520',
+          colorIcon: '#fff'
+        },
+        {
+          imagen: 'mdi-medication',
+          titulo: 'Salud',
+          texto: 'Brindar medicamentos e insumos que permitan un estado de salud excelente para nuestros adultos mayores.',
+          colorFondo: '#c41520',
+          colorIcon: '#fff'
         }
       ]
       /** estado global de la seccion de ELLOS CONFIAN EN NOSOTROS */
@@ -144,8 +144,8 @@ const landingStore = defineStore('landing', {
 
       /** esta parte manipula la seccion del footer */
       const telefono = '584125897495'
-      const mail = 'sinapsysunellez@gmail.com'
-      const mailDos = 'sinapsys@unellez.edu.ve'
+      const mail = 'INASS@gmail.com'
+      const mailDos = 'INASS@INASS.org'
       this.contacto = [
         { icono: 'mdi-phone', texto: `+${telefono}`, url: `tel://${telefono}` },
         { icono: 'mdi-mail', texto: mail, url: `mailto://${mail}` },
@@ -153,22 +153,18 @@ const landingStore = defineStore('landing', {
         { icono: 'mdi-map-marker', texto: `+${telefono}` }
       ]
       this.mapsite = [
-        { texto: 'Fintech', url: '#' },
-        { texto: 'Tecnologias de informacion', url: '#' },
-        { texto: 'Infraestructura tecnológica', url: '#' }
+        { texto: 'Objetivos', url: '#' },
+        { texto: 'Servicios', url: '#' },
+        { texto: 'Testimonios', url: '#' }
       ]
-      this.acercaDe = [
-        { texto: 'Nosotros', url: '#' },
-        { texto: 'Marco legal', url: '#' },
-        { texto: 'Servicios', url: '#' }
-      ]
+
       this.enlaceSocial = [
-        { icono: 'mdi-twitter', url: 'https://twitter.com' },
+        { icono: 'mdi-twitter', url: 'https://twitter.com/salainass/status/1673386398596968448' },
         { icono: 'mdi-google', url: 'https://www.google.com' },
-        { icono: 'mdi-instagram', url: 'https://www.instagram.com/fundacionsinapsys' },
+        { icono: 'mdi-instagram', url: 'https://www.instagram.com/inass_oficial/?hl=en' },
         { icono: 'mdi-pinterest', url: 'https://www.pinterest.com' },
         { icono: 'mdi-reddit', url: 'https://www.reddit.com' },
-        { icono: 'mdi-facebook', url: 'https://www.facebook.com/FundacionSinapsys' },
+        { icono: 'mdi-facebook', url: 'https://www.facebook.com/INASSOFICIAL/' },
       ]
     }
   }

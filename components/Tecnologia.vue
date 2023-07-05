@@ -2,7 +2,7 @@
   <v-row align-content="center" justify="center">
     <v-col cols="12">
       <h3 class="text-h4 text-uppercase text-center font-weight-light">
-        economía digital
+        nuestros objetivos
       </h3>
     </v-col>
     <v-col cols="12">
@@ -36,10 +36,10 @@
       </v-col>
       <v-col cols="12" md="9" class="mx-auto">
         <img
-          src="@/assets/banner/Computadoras.png"
+          src="@/assets/banner/medico.png"
           alt=""
           class="img-clase"
-          data-aos="fade-up" 
+          data-aos="fade-up"
           data-aos-duration="800"
         >
       </v-col>
@@ -62,7 +62,7 @@ export default {
 
 <style>
 .img-clase {
-  height: 300px;
+  height: 200px;
   width: 100%;
 }
 
