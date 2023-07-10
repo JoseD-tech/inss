@@ -18,8 +18,7 @@
         </div>
 
         <p class="text-h4 font-weight-regular text-capitalize text-color">
-          Mejorar la calidad de vida de los adultos mayores.<br> <span class="mt-2 d-block font-weight-bold">Sembrando la
-            vida.</span>
+          CSSR Jose Ignacio del pumar.<br> <span class="mt-2 d-block font-weight-bold">familia que proteje.</span>
         </p>
       </v-col>
 

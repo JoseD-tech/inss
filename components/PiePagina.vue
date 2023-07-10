@@ -48,7 +48,7 @@
     <v-row>
         <v-col cols="12">
           <p class="white--text text-center font-weight-medium">
-            &copy; Copyright 2022 INASS - All right reserved.
+            &copy; Copyright 2023 INASS - CCR Barinas - All right reserved.
           </p>
         </v-col>
       </v-row>
